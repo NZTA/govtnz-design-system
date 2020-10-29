@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #CONTENT BLOCK
+\*------------------------------------*/
+
+.content-block {
+    @extend %vertical-spacing-bottom-s;
+
+    .layout &:last-child { @extend %mb-0;}
+    .content-block__icon { @extend %pt-l--q-medium-down; }
+    h2 {
+        @extend %pt-xxxl;
+        @extend %section--breakline;
+    }
+}
+
+
+//.content-block .intro {
+//    margin-bottom:0;
+//}

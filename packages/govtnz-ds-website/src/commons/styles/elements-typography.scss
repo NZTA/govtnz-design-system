@@ -18,17 +18,17 @@ h6 {
   font-weight: $font-weight-medium;
 }
 
-h1 {
-  margin-top: $spacing-64;
-  margin-bottom: $spacing-16;
-  font-size: 3rem;
-  line-height: 1.15;
+// h1 {
+//   margin-top: $spacing-64;
+//   margin-bottom: $spacing-16;
+//   font-size: 3rem;
+//   line-height: 1.15;
 
-  @media (min-width: 40.0625em) {
-    margin-top: $spacing-80;
-    font-size: 3.5rem;
-  }
-}
+//   @media (min-width: 40.0625em) {
+//     margin-top: $spacing-80;
+//     font-size: 3.5rem;
+//   }
+// }
 
 h2 {
   margin-top: $spacing-48;
@@ -85,14 +85,14 @@ a {
     color: $color-core-black;
   }
 
-  &:visited {
-    color: $color-ds-default-link-visited;
-    color: var(--color-theme-link-visited, $color-ds-default-link-visited);
+  // &:visited {
+  //   color: $color-ds-default-link-visited;
+  //   color: var(--color-theme-link-visited, $color-ds-default-link-visited);
 
-    @include print {
-      color: $color-core-black;
-    }
-  }
+  //   @include print {
+  //     color: $color-core-black;
+  //   }
+  // }
   &:hover {
     color: $color-ds-default-link-hover;
     color: var(--color-theme-link-hover, $color-ds-default-link-hover);

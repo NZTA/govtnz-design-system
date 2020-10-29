@@ -1,0 +1,93 @@
+/*------------------------------------*\
+    #ACCESSIBILITY 
+\*------------------------------------*/
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.access {
+    width: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.access:focus,
+.access-keys:target {
+    width: auto;
+    height: auto;
+    position: static;
+    overflow: visible;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+
+.access-keys {
+    background-color: rgb(252, 244, 185);
+}
+
+
+    .access-keys__key {
+        margin-right: .5em;
+        display: inline-block;
+        width: 2.5em;
+    }
+
+// -----------------------------------------------------------------------------
+// To indicate that a link goes off-site (to an external URL), include the
+// class 'external' on your <a> tags. Also, consider including SR-friendly tags:
+// <a class="external" href="http://google.com">Go to Google.com<span class="nonvisual-indicator"> (external link)</span></a>
+// -----------------------------------------------------------------------------
+a.external {
+    @include rem(padding-right,12);
+    @include rem(margin-right,4);
+
+    &:after {
+        @include rem(margin-top,8);
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-position: 0 $icon-bg-blue;
+        background-size: 10px;
+    }
+
+    &:hover:after {
+        background-position: 0 $icon-bg-dark-blue;
+    }
+}
+.i-external-link {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+.theme--error, .theme--confirmation {
+    a.external {
+        &:after {
+            background-position: 0 $icon-bg-white;
+        }
+    }
+}
+.theme--dark, .theme--strong, .theme--slate, .theme--error, .theme--confirmation {
+    a.external {
+        &:after {
+            background-position: 0 $icon-bg-white;
+        }
+    }
+    .theme--white {
+        a.external:after {
+            background-position: 0 $icon-bg-dark-blue;
+        }
+    }
+}

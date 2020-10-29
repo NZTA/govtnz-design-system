@@ -36,13 +36,15 @@ import BasicsIcon from '../commons/svgs/icon-home-basics.svg';
 import ComponentsIcon from '../commons/svgs/icon-home-components.svg';
 import PatternsIcon from '../commons/svgs/icon-home-patterns.svg';
 
+import '../commons/styles/nzta/icons-data-svg.css';
+
 // import { Details, Summary } from 'react-accessible-details'
 
 const IndexPage = props => {
   return (
     <Layout {...props}>
       <SEO
-        title="Design System - Alpha"
+        title="NZTA pattern library"
         description=""
         keywords={[
           'government',
@@ -53,7 +55,8 @@ const IndexPage = props => {
         ]}
         robots={true}
       />
-      <div className="banner banner--green">
+
+      {/* <div className="banner banner--green">
         <Container width="fixed">
           <Row>
             <Column xs="12" sm="8" md="7" lg="6" lgOffset="1">
@@ -61,9 +64,7 @@ const IndexPage = props => {
                 Design system for NZ public sector websites
               </H1>
               <P styleSize="large">
-                Design and build fast, accessible websites backed by user
-                research, so New Zealanders can easily use government services
-                online.
+                NZTA pattern library.
               </P>
             </Column>
             <Column xs="12" sm="3" md="4" lg="4">
@@ -75,11 +76,123 @@ const IndexPage = props => {
             </Column>
           </Row>
         </Container>
-      </div>
+      </div> */}
       <Container width="fixed">
         <Row>
           <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
-            <P styleSize="medium">
+
+          <div class="section-s  " id="font-sizes">
+
+<div class="[ section layout ] theme--paper">
+
+<div class="grid">
+    
+    <div class="[ col ] ">
+
+        <div class="[ grid ] font-size-container ">
+
+
+
+    <div class=" [ col ] ">
+
+        <h2 id="font-sizes">
+Font sizes
+</h2>
+
+    </div>
+
+  
+
+<div class="[ col large-half ] font-size__left">
+
+      
+
+        
+
+            
+
+<h4>
+a) Heading sizes
+</h4>
+
+        
+
+            <p>Generally H1, H2 and H3 headings should be all you need for page content. If you find yourself needing lots of H4, H5 or H6 headings you might want to consider reorganising the content or editing it for length.</p>
+
+        
+        
+        <div class="theme--neutral pill--soft col">
+
+            <h1>
+h1.Heading size
+</h1><h2 id="h2heading-size">
+h2.Heading size
+</h2><h3 id="h3heading-size">
+h3.Heading size
+
+</h3>
+
+<h4>
+h4.Heading size
+</h4><h5>
+h5.Heading size
+</h5><h6>
+h6.Heading size
+</h6>
+
+        </div>
+
+    
+     
+</div>
+
+<div class=" [ col large-half ] font-size__right">
+
+      
+
+        
+
+            
+
+<h4>
+b) Body copy
+</h4>
+
+        
+
+            <p>The text you’re reading uses 16pt, sans-serif Source Sans Pro with a line-height of 1.5. Here are the other body copy sizes available:</p>
+
+        
+        
+        <div class="theme--neutral col pill--soft ">
+
+            <p class="intro">
+This is an intro paragraph
+</p><p>I am a normal paragraph</p><p class="small">
+This is a small paragraph
+</p><p class="tiny">
+This is a tiny paragraph
+</p>
+
+        </div>
+        
+    
+
+</div>
+
+</div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+            {/* <P styleSize="medium">
               The New Zealand Government Design System (NZGDS) alpha is a
               catalogue of reusable basic elements, components, and patterns for
               building websites and applications, along with guidance on how and
@@ -237,7 +350,7 @@ const IndexPage = props => {
                   Discuss GitHub issues
                 </A>
               </Li>
-            </Ul>
+            </Ul> */}
           </Column>
         </Row>
       </Container>

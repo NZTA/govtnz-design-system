@@ -24,7 +24,7 @@ const LogoLockUp = () => (
       />
     </div>
     <span className="visually-hidden">New Zealand Government</span>
-    <div className="header__title">Design System</div>
+    <div className="header__title">NZTA pattern library</div>
   </a>
 );
 

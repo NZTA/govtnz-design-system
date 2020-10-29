@@ -5,6 +5,19 @@
 @import '../commons/styles/settings-breakpoints';
 @import '../commons/styles/settings-mixins';
 
+
+/* NZTA pattern library*/
+@import '../commons/styles/nzta/_config.scss';
+@import '../commons/styles/nzta/_mixins.scss';
+@import '../commons/styles/nzta/_extends.scss';
+@import '../commons/styles/nzta/_type.scss';
+@import '../commons/styles/nzta/_themes.scss';
+@import '../commons/styles/nzta/_layout.scss';
+
+@import '../commons/styles/nzta/components/_list.scss';
+@import '../commons/styles/nzta/components/_global-nav.scss';
+
+
 .g-footer-wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

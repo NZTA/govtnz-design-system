@@ -1,0 +1,162 @@
+/*------------------------------------*\
+    #THEMES
+\*------------------------------------*/
+
+$error-bg-color: #c44;
+$error-border-color: #c44;
+$error-font-color: $white;
+$error-link-color: $white;
+
+$confirmation-bg-color: $confirmation-green;
+$confirmation-border-color: $confirmation-green;
+$confirmation-font-color: $white;
+$confirmation-link-color: $white;
+
+$dark-bg-color: $color-bg-header;
+$dark-border-color: $color-bg-header;
+$dark-font-color: $white;
+$dark-link-color: inherit;
+
+$slate-bg-color: #2c3a41;
+$slate-border-color: #2c3a41;
+$slate-font-color: $white;
+$slate-link-color: $white;
+
+$mono-bg-color: #333;
+$mono-border-color: #333;
+$mono-font-color: $white;
+$mono-link-color: $white;
+
+$strong-bg-color: lighten($color-bg-header, 4%);
+$strong-border-color: lighten($color-bg-header, 4%);
+$strong-font-color: $white;
+$strong-link-color: inherit;
+
+$header-bg-color: $color-bg-header;
+$header-border-color: $header-bg-color;
+$header-font-color: $white;
+$header-link-color: $white;
+
+
+//array of theme variables - the children of the array always need to be in the same order!
+$theme-names:
+  dark,
+  mono,
+  strong,
+  error,
+  confirmation,
+  header;
+
+
+$bg-color:
+  $dark-bg-color,
+  $mono-bg-color,
+  $strong-bg-color,
+  $error-bg-color,
+  $confirmation-bg-color,
+  $header-bg-color;
+
+$border-color:
+  $dark-border-color,
+  $mono-border-color,
+  $strong-border-color,
+  $error-border-color,
+  $confirmation-border-color,
+  $header-border-color;
+
+$font-color:
+  $dark-font-color,
+  $mono-font-color,
+  $strong-font-color,
+  $error-font-color,
+  $confirmation-font-color,
+  $header-font-color;
+
+$link-color:
+  $dark-link-color,
+  $mono-link-color,
+  $strong-link-color,
+  $error-link-color,
+  $confirmation-link-color,
+  $header-link-color;
+
+
+
+
+// Create a theme for each category
+@for $i from 1 through length($theme-names) {
+
+  %theme--#{nth($theme-names, $i)} {
+
+    background-color: nth($bg-color, $i);
+    color: nth($font-color, $i);
+
+      a {
+          color: nth($link-color, $i);
+          &:hover {
+            opacity: .8;
+            color: inherit;
+          }
+      }
+
+  }
+
+}
+
+
+//background themes using the mixin above
+.theme--error {         @extend %theme--error;}
+.theme--confirmation {  @extend %theme--confirmation; }
+.theme--dark {          @extend %theme--dark; }
+.theme--mono {          @extend %theme--mono; }
+.theme--strong {        @extend %theme--strong; }
+
+//simple background themes
+.theme--white,
+.theme--paper {     background-color: $white;}
+.theme--neutral {   background-color: $ultra-light-grey; }
+.theme--light {     background-color: #DFE4E9; }
+.theme--mid {       background-color: rgb(248, 247, 240); }
+
+
+//themes with box shadow
+.theme--paper, 
+.theme--error,
+.theme--confirmation {
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);  
+}
+
+
+.theme--slate {
+    background-color: #41535E;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+
+.theme--info {
+    background: #F7F9E9;
+    color:$base-link-color;
+    & .i-section { background-color: #afc83d; }
+}
+
+.theme--info-icon {
+  background-color: #afc83d;
+}
+
+
+.theme--details >:last-child {
+  margin-bottom:0!important;
+}
+
+.theme--error,
+.theme--confirmation {  
+  a {
+    @extend %underline;
+    @include custom-line-color--modified(#fff);
+    &:hover{
+        background-image:none;
+    }
+  }
+}

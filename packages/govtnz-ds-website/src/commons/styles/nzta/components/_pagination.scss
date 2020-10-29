@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+
+.pagination {
+	@extend %vertical-spacing-top-s;
+
+	&.pagination-centered {
+		text-align: center;
+		a {
+			margin: 0 .75rem;
+		}
+	}
+
+	ul {
+		@extend %list-unstyled;
+		@extend %list--inline;
+	}
+
+	a {
+		margin: 0 1.5rem 0 0;
+		&.disabled {
+			color: $mid-grey;
+		}
+	}
+
+	li.active a {
+		color: $dark-blue;
+	}
+}

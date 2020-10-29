@@ -1,0 +1,207 @@
+/*------------------------------------*\
+    #PAGE LAYOUT
+\*------------------------------------*/
+
+.wrapper {
+    @include rem(max-width, 1152);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper--huge {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// ----------------------------------------------------------------------------
+// vertical spacing
+// ----------------------------------------------------------------------------
+$vertical-spacing-xxs: 8;
+$vertical-spacing-xs: 12;
+$vertical-spacing-s: 20;
+$vertical-spacing-m: 32;
+$vertical-spacing-l: 48;
+
+
+%vertical-spacing-xxs {
+    @include rem(padding-top, $vertical-spacing-xxs);
+    @include rem(padding-bottom, $vertical-spacing-xxs);
+}
+%vertical-spacing-xs {
+    @include rem(padding-top, $vertical-spacing-xs);
+    @include rem(padding-bottom, $vertical-spacing-xs);
+}
+%vertical-spacing-s {
+    @include rem(padding-top, $vertical-spacing-s);
+    @include rem(padding-bottom, $vertical-spacing-s);
+}
+%vertical-spacing-m {
+    @include rem(padding-top, $vertical-spacing-m);
+    @include rem(padding-bottom, $vertical-spacing-m);
+}
+%vertical-spacing {
+    @include rem(padding-top, $vertical-spacing-l);
+    @include rem(padding-bottom, $vertical-spacing-l);
+    @include media("small-down") {
+        & {
+            @include rem(padding-top, $vertical-spacing-m);
+            @include rem(padding-bottom, $vertical-spacing-m);
+        }
+    }
+}
+
+%vertical-spacing-top-xxs { @include rem(padding-top, $vertical-spacing-xxs); }
+%vertical-spacing-top-xs { @include rem(padding-top, $vertical-spacing-xs); }
+%vertical-spacing-top-s { @include rem(padding-top, $vertical-spacing-s); }
+%vertical-spacing-top-m { @include rem(padding-top, $vertical-spacing-m); }
+%vertical-spacing-top {
+    @include rem(padding-top, $vertical-spacing-l);
+    @include media("small-down") {
+        & {
+            @include rem(padding-top, $vertical-spacing-s);
+        }
+    }
+}
+
+%vertical-spacing-bottom-xxs { @include rem(padding-bottom, $vertical-spacing-xxs); }
+%vertical-spacing-bottom-xs { @include rem(padding-bottom, $vertical-spacing-xs); }
+%vertical-spacing-bottom-s { @include rem(padding-bottom, $vertical-spacing-s); }
+%vertical-spacing-bottom-m { @include rem(padding-bottom, $vertical-spacing-m); }
+%vertical-spacing-bottom {
+    @include rem(margin-bottom, $vertical-spacing-l);
+    @include media("small-down") {
+        & {
+            @include rem(margin-bottom, $vertical-spacing-s);
+        }
+    }
+}
+
+%remove-vertical-spacing {
+    padding-bottom:0;
+    padding-top:0;
+}
+
+.section { @extend %vertical-spacing; }
+.section-s { @extend %vertical-spacing-s; }
+.section-m { @extend %vertical-spacing-m; }
+//todo change this
+.section--stacked { @extend %vertical-spacing-top; }
+
+.left { @extend %left;}
+.right { @extend %right;}
+
+
+// ----------------------------------------------------------------------------
+// Layout modifiers
+// ----------------------------------------------------------------------------
+
+%layout-left {
+    padding-left: 1rem;
+    @include medium {
+        & {
+            padding-left: 4%;
+        }
+    }
+    @include large {
+        & {
+            padding-left: 8.3333333%;
+        }
+    }
+}
+
+%layout-right {
+    padding-right: 1rem;
+    @include medium {
+        & {
+            padding-right: 4%;
+        }
+    }
+    @include large {
+        & {
+            padding-right: 8.3333333%;
+        }
+    }
+}
+
+
+
+.layout {
+    @extend %border-box;
+    @extend %layout-left;
+    @extend %layout-right;
+}
+
+
+.layout--nudge {
+    @extend %relative;
+
+    @include large() {
+        margin-top: -2em;
+    }
+    
+    + .layout--nudge { margin-top: 0; }
+}
+
+//todo sorry its a hack :(
+
+.layout--left { @extend %layout-left; }
+
+.layout--right { @extend %layout-right; }
+
+
+
+
+.layout--half {
+    @include large() {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+
+.homepage 
+// ----------------------------------------------------------------------------
+// 
+// ----------------------------------------------------------------------------
+
+
+%ratio {
+    position: relative;
+    height: 0;
+    & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.ratio-square {
+    @extend %ratio;
+    padding-bottom: 100%;
+}
+
+.ratio-filmic { @extend %ratio; }
+    .crop {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+        .crop--bottom {
+            > img {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+.divider-medium {
+    @include medium {
+        border-left: solid 1px rgba(0,0,0,0.1);
+
+    }
+}

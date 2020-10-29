@@ -5,9 +5,25 @@
 @import '../commons/styles/settings-breakpoints';
 @import '../commons/styles/settings-mixins';
 
+/* NZTA pattern library*/
+@import '../commons/styles/nzta/_config.scss';
+@import '../commons/styles/nzta/_mixins.scss';
+@import '../commons/styles/nzta/_extends.scss';
+@import '../commons/styles/nzta/_type.scss';
+@import '../commons/styles/nzta/_themes.scss';
+@import '../commons/styles/nzta/_layout.scss';
+@import '../commons/styles/nzta/_icons.scss';
+@import '../commons/styles/nzta/_accessibility.scss';
+
+@import '../commons/styles/nzta/components/_grid.scss';
+@import '../commons/styles/nzta/components/_list.scss';
+@import '../commons/styles/nzta/components/_global-nav.scss';
+@import '../commons/styles/nzta/components/_breadcrumb.scss';
+
+
 .header {
-  background-color: $color-core-grey;
-  background-color: var(--color-theme-dark-grey, $color-core-grey);
+  background-color: $dark-blue;
+  // background-color: var(--color-theme-dark-grey, $dark-blue);
   color: $color-core-white;
   @include font-smoothing;
 
@@ -19,7 +35,7 @@
 .header__logo,
 .header__icon,
 .header__title {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   color: $color-core-white;
   fill: $color-core-white;
@@ -83,48 +99,84 @@
 }
 
 .header__title {
-  margin-top: $spacing-8;
-  margin-bottom: $spacing-8;
-  margin-left: $spacing-16;
-  padding-left: $spacing-16;
-  padding-top: $spacing-2;
-  padding-bottom: $spacing-2;
-  border-left: $color-ds-default-mid-grey;
-  border-left: 1px solid var(--color-theme-mid-grey, $color-ds-default-mid-grey);
-  font-size: rem(18);
-  color: $color-core-white;
-
-  > * {
-    margin: 0;
+    
+  @include rem(padding-bottom, $space-m);
+  //@extend %pb-l--q-large;
+  @include media('large') {
+      @include rem(padding-bottom, $space-xxxxl);
   }
-
-  @include xsmall {
-    font-size: rem(16);
-    margin-left: $spacing-8;
-    padding-left: $spacing-8;
+  
+  .header__image + & {
+      @extend %absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
   }
+  
+  @include up-to(small) {
+      padding-bottom:0;
+      .breadcrumb {
+          margin-top:0;
+          @include rem(margin-bottom, $space-xxs);
+      }
+      .header__image + & {
+          //@include rem(padding-top, $space-m);
+          position: relative;
+          background-color: transparent;
 
-  @include medium {
-    margin-top: $spacing-24;
-    margin-bottom: $spacing-24;
-    margin-left: $spacing-12;
-    padding-left: $spacing-12;
-    padding-top: $spacing-4;
-    padding-bottom: $spacing-8;
-    font-size: rem(20);
-  }
-
-  @include large {
-    margin-left: $spacing-24;
-    padding-left: $spacing-24;
-    font-size: rem(24);
-  }
-
-  @include print {
-    color: $color-core-black;
-    border-left: 1px solid $color-core-black;
+          & .breadcrumb {
+              position: relative;
+              bottom: 100%;
+              left: 0;
+              right: 0;
+          }
+      }
   }
 }
+
+// .header__title {
+//   margin-top: $spacing-8;
+//   margin-bottom: $spacing-8;
+//   margin-left: $spacing-16;
+//   padding-left: $spacing-16;
+//   padding-top: $spacing-2;
+//   padding-bottom: $spacing-2;
+//   border-left: $color-ds-default-mid-grey;
+//   border-left: 1px solid var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+//   font-size: rem(18);
+//   color: $color-core-white;
+
+//   > * {
+//     margin: 0;
+//   }
+
+//   @include xsmall {
+//     font-size: rem(16);
+//     margin-left: $spacing-8;
+//     padding-left: $spacing-8;
+//   }
+
+//   @include medium {
+//     margin-top: $spacing-24;
+//     margin-bottom: $spacing-24;
+//     margin-left: $spacing-12;
+//     padding-left: $spacing-12;
+//     padding-top: $spacing-4;
+//     padding-bottom: $spacing-8;
+//     font-size: rem(20);
+//   }
+
+//   @include large {
+//     margin-left: $spacing-24;
+//     padding-left: $spacing-24;
+//     font-size: rem(24);
+//   }
+
+//   @include print {
+//     color: $color-core-black;
+//     border-left: 1px solid $color-core-black;
+//   }
+// }
 
 .subheader {
   background: #2a2a2a;

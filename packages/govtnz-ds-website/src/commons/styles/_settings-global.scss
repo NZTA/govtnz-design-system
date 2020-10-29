@@ -71,6 +71,74 @@ $color-warning: $color-ds-alert-amber;
 $color-success: $color-ds-alert-green;
 $color-info: $color-ds-alert-blue;
 
+
+$ultra-dark-grey: #444;
+$dark-grey: #555;
+$mid-grey: #999;
+$light-grey: #ddd;
+$lighter-grey: #eee;
+$ultra-light-grey: #F2F4F7;
+$white: #fff;
+$black: #000000;
+$dark-blue:#00456B;
+$med-blue: rgb(26, 104, 157);
+$teal: #008b97;
+
+
+$color-focus: rgb(255, 92, 0);
+
+
+$error-red: #c44;
+$warning-red: #CA4142;
+$confirmation-green: #59B359;
+$color-orange: #FF8C19;
+
+/* base colours */
+$base-font-color: $dark-grey;
+$base-bg-color: $ultra-light-grey;
+
+/* link colours */
+$base-link-color: #236FA6;
+$base-link-hover-color: darken($base-link-color, 15%);
+$base-link-visited-color: lighten($base-link-color, 5%); //#c3c;
+
+$base-link-color-reversed: #83BFEB;
+$base-link-hover-color-reversed: lighten($base-link-color-reversed, 15%);
+$base-link-visited-color-reversed: lighten($base-link-color-reversed, 15%);
+
+$primary-border-color: #F2F2EB;
+
+
+// header colour
+$color-bg-header: #004771; // lighten(#00456B, 5%);
+
+// form colours
+$form-input-color: #F2F2EB;
+$form-label-color: $dark-blue;
+$form-input-border-color: $dark-blue;
+
+// table colours
+$color-bg-table-head: #eee;
+
+
+// -----------------------------------------------------------------------------
+// Icon colouring
+// -----------------------------------------------------------------------------
+// these need to to in steps of 100/(number_of_colours-1)
+// -----------------------------------------------------------------------------
+
+$icon-bg-black: 0;
+$icon-bg-white: 11.111%; // 100% / (no. colours-1)
+$icon-bg-blue: 22.222%;
+$icon-bg-dark-blue: 33.333%;
+$icon-bg-grey: 44.444%;
+$icon-bg-dark-grey: 55.555%;
+$icon-bg-light-grey: 66.666%;
+$icon-bg-green: 77.777%;
+$icon-bg-orange: 88.888%;
+$icon-bg-red: 100%;
+
+
 // Site width
 // =============================================================================
 $max-width: 1366;

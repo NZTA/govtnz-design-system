@@ -1,0 +1,44 @@
+/**
+ * This file contains the additional CSS specific to the highways page.
+ */
+
+/* PROJECT PAGE HEADER */
+.header--section-nav {
+    .header__title {
+        padding-bottom: 0;
+        h1 {
+            margin-bottom: 3rem;
+        }
+    }
+    .breadcrumb {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.section-nav {
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            padding: 5px 10px;
+            margin: 5px;
+            font-weight: 300;
+            background: #0b5485;
+        }
+        &.active a {
+            font-weight: 600;
+        }
+    }
+}
+
+@media only screen and (min-width: 37.5em) {
+    .section-nav {
+        background: #0b5485;
+    }
+    .section-nav li a {
+        padding: 1rem .6rem 1rem .8rem;
+        margin: 0;
+    }
+}

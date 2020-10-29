@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    #FIELD DROPDOWN
+\*------------------------------------*/
+
+.field--dropdown {
+    select {
+        cursor: pointer;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    .dropdown {
+        background: #F2F2EB;
+        color: inherit;
+        border-radius: .25rem;
+        padding: .5rem 1rem;
+        
+        /* Styles for when the select box is open */
+        &.dropdownOpen {
+            /* arrow up styling */
+            .dropdownInner {
+                &:before {
+                    background-position: 0 100%;
+                }
+            }
+        }
+        
+        /* Styles for when the select box is in focus */
+        &.dropdownFocus {
+            outline: solid 3px #ff5c00;
+        }
+        
+        /* arrow styling */
+        .dropdownInner {
+            &:before {
+                background: url("/images/filter-toggle.png") no-repeat 0 0;
+                width: 20px;
+                height: 20px;
+                background-size: 20px 40px;
+                content: '';
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        /**
+         * DROPDOWN THEMES
+         */
+        &.dropdown--dark {
+            background: #094771;
+            color: #fff;
+
+            .dropdownInner {
+                &:before {
+                    background: url("/images/filter-toggle-dark.png") no-repeat 0 0;
+                    background-size: 20px 40px;
+                }
+            }
+        }
+
+        &.dropdownDisabled { /* Styles for when the select box itself is disabled */
+            background: #eee;
+            cursor: not-allowed;
+            color: inherit;
+            opacity: 0.6;
+        }
+    }
+}

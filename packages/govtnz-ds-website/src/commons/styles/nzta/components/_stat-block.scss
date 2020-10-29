@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #STATISTICS BLOCK
+\*------------------------------------*/
+
+.statistics__figure {
+    @extend %block-element;
+    @extend %font-size-xxxxl;
+    @extend %font-weight-light;
+    @extend %mt-0;
+    @extend %mb-0;
+
+    color: $dark-blue;
+}
+
+.statistics__label {
+    @extend %block-element;
+	@extend %pr-m;
+	@extend %mt-0;
+    @extend %mb-0;
+    @extend %font-size-m;
+    @extend %font-weight-bold;
+    color: $dark-blue;
+}
+
+.statistics__sub-label {
+    @extend %block-element;
+	@extend %font-size-s;
+    @extend %font-weight-normal;
+    color: $dark-grey;
+}
+
