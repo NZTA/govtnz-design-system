@@ -132,6 +132,13 @@
 
 
 
+.i-closures {
+    background-image: url('png/closures.png');
+    background-repeat: no-repeat;
+}
+
+
+
 .i-contact-grey {
     background-image: url('png/contact-grey.png');
     background-repeat: no-repeat;
@@ -314,6 +321,13 @@
 
 
 
+.i-map-tools-closures {
+    background-image: url('png/map-tools-closures.png');
+    background-repeat: no-repeat;
+}
+
+
+
 .i-map-tools-projects {
     background-image: url('png/map-tools-projects.png');
     background-repeat: no-repeat;
@@ -414,6 +428,13 @@
 
 .i-pencil-white {
     background-image: url('png/pencil-white.png');
+    background-repeat: no-repeat;
+}
+
+
+
+.i-pins {
+    background-image: url('png/pins.png');
     background-repeat: no-repeat;
 }
 

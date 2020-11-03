@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import { StaticQuery, graphql, PageRendererProps } from 'gatsby';
+
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
 import Column from '@govtnz/ds/build/react-ts/FlexColumn';
 import LogoLockUp from './LogoLockUp';
+
 import Header from './header';
 import Footer from './footer';
 import SkipLink from './SkipLink';
+
 import '../commons/styles/elements-global.scss';
 import '../commons/styles/elements-typography.scss';
 import '../commons/styles/overrides-typography.scss';
