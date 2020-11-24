@@ -2,16 +2,17 @@ import React from 'react';
 import { Link } from 'gatsby';
 // import FooterWrapper from '@govtnz/ds/build/react-ts/FooterWrapper'
 // import FooterStandard from '@govtnz/ds/build/react-ts/FooterStandard'
-import Container from '@govtnz/ds/build/react-ts/FlexContainer';
-import Row from '@govtnz/ds/build/react-ts/FlexRow';
-import Column from '@govtnz/ds/build/react-ts/FlexColumn';
+// import Container from '@govtnz/ds/build/react-ts/FlexContainer';
+// import Row from '@govtnz/ds/build/react-ts/FlexRow';
+// import Column from '@govtnz/ds/build/react-ts/FlexColumn';
+
 import Icon from '../components/Icon';
 import './footer.scss';
 
-import LogoIcon from '../commons/svgs/icon-nzg.svg';
-import CCIcon from '../commons/svgs/icon-cc.svg';
-import CCByIcon from '../commons/svgs/icon-cc-by.svg';
-import CoatIcon from '../commons/svgs/icon-coat-of-arms.svg';
+// import LogoIcon from '../commons/svgs/icon-nzg.svg';
+// import CCIcon from '../commons/svgs/icon-cc.svg';
+// import CCByIcon from '../commons/svgs/icon-cc-by.svg';
+// import CoatIcon from '../commons/svgs/icon-coat-of-arms.svg';
 
 const Footer = () => (
   // <footer className="g-footer-wrapper" role="contentinfo">

@@ -336,7 +336,7 @@ export default class Example extends Component<Props, State> {
             </div>
             <Details className="example__details" onChange={this.clickFormat}>
               <Summary id={summaryId} className="example__summary">
-                <span className="example__summary-text">Code</span>
+                <span className="example__summary-text">Where do I find the notice number?</span>
                 <Icon
                   className="example__summary-icon-down icon icon--theme-highlight"
                   role="presentation"
