@@ -74,7 +74,7 @@ what to do next.</p>
         className: "example__iframe",
         src:"/components/Button__example0.html",
         title:"Example: Primary buttons",
-        height: 167
+        height: 200
       }}></Example>
 </ExampleContainer>
 

@@ -15,8 +15,10 @@ import '@govtnz/ds/build/css/FlexColumn.css';
 
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../commons/styles/ds/themed-H1.scss';
+
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../commons/styles/ds/themed-H2.scss';
+
 import H3 from '@govtnz/ds/build/react-ts/H3';
 import '../commons/styles/ds/themed-H3.scss';
 
@@ -90,101 +92,66 @@ const IndexPage = props => {
       <Container width="fixed">
         <Row>
           <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
-
           <div class="section-s  " id="font-sizes">
+          <div class="[ section layout ] theme--paper">
+          <div class="grid">              
+              <div class="[ col ] ">
+                  <div class="[ grid ] font-size-container ">
+                  <div class=" [ col ] ">
+                    <h2 id="font-sizes">
+                      Font sizes
+                    </h2>
+                  </div>
 
-<div class="[ section layout ] theme--paper">
+                  <div class="[ col large-half ] font-size__left">
+                    <h4>
+                    a) Heading sizes
+                    </h4>
+                    <p>Generally H1, H2 and H3 headings should be all you need for page content. If you find yourself needing lots of H4, H5 or H6 headings you might want to consider reorganising the content or editing it for length.</p>
 
-<div class="grid">
-    
-    <div class="[ col ] ">
+                    <div class="theme--neutral pill--soft col">
 
-        <div class="[ grid ] font-size-container ">
+                    <h1>
+                    h1.Heading size
+                    </h1>
+                    <h2 id="h2heading-size">
+                    h2.Heading size
+                    </h2>
+                    <h3 id="h3heading-size">
+                    h3.Heading size
+                    </h3>
 
+                    <h4>
+                    h4.Heading size
+                    </h4>
+                    <h5>
+                    h5.Heading size
+                    </h5>
+                    <h6>
+                    h6.Heading size
+                    </h6> 
+                  </div>
+            </div>
 
+          <div class=" [ col large-half ] font-size__right">
 
-    <div class=" [ col ] ">
+          <h4>
+            b) Body copy
+          </h4>
 
-        <h2 id="font-sizes">
-Font sizes
-</h2>
-
-    </div>
-
-  
-
-<div class="[ col large-half ] font-size__left">
-
-      
-
+          <p>The text you’re reading uses 16pt, sans-serif Source Sans Pro with a line-height of 1.5. Here are the other body copy sizes available:</p>
         
-
-            
-
-<h4>
-a) Heading sizes
-</h4>
-
-        
-
-            <p>Generally H1, H2 and H3 headings should be all you need for page content. If you find yourself needing lots of H4, H5 or H6 headings you might want to consider reorganising the content or editing it for length.</p>
-
-        
-        
-        <div class="theme--neutral pill--soft col">
-
-            <h1>
-h1.Heading size
-</h1><h2 id="h2heading-size">
-h2.Heading size
-</h2><h3 id="h3heading-size">
-h3.Heading size
-
-</h3>
-
-<h4>
-h4.Heading size
-</h4><h5>
-h5.Heading size
-</h5><h6>
-h6.Heading size
-</h6>
-
-        </div>
-
-    
-     
-</div>
-
-<div class=" [ col large-half ] font-size__right">
-
-      
-
-        
-
-            
-
-<h4>
-b) Body copy
-</h4>
-
-        
-
-            <p>The text you’re reading uses 16pt, sans-serif Source Sans Pro with a line-height of 1.5. Here are the other body copy sizes available:</p>
-
-        
-        
-        <div class="theme--neutral col pill--soft ">
+          <div class="theme--neutral col pill--soft ">
 
             <p class="intro">
-This is an intro paragraph
-</p><p>I am a normal paragraph</p><p class="small">
-This is a small paragraph
-</p><p class="tiny">
-This is a tiny paragraph
-</p>
+            This is an intro paragraph
+            </p><p>I am a normal paragraph</p><p class="small">
+            This is a small paragraph
+            </p><p class="tiny">
+            This is a tiny paragraph
+            </p>
 
-        </div>
+          </div>
         
     
 
