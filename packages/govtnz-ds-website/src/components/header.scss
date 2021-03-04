@@ -105,7 +105,7 @@
   @include rem(padding-bottom, $space-m);
   //@extend %pb-l--q-large;
   @include media('large') {
-      @include rem(padding-bottom, $space-xxxxl);
+      @include rem(padding-bottom, $space-l);
   }
   
   .header__image + & {

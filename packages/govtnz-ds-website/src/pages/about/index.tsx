@@ -17,7 +17,6 @@ import AboutPage from '../../components/AboutPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
 const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">About the Design System alpha website</H1>
-
 <P styleSize="large">
     The New Zealand Government Design System (NZGDS) alpha website provides
     a catalogue of reusable basic elements, single components, and patterns of

@@ -5,8 +5,7 @@ const constants = {
     large: "g-body-l",
     medium: "g-body-m",
     small: "g-body-s",
-    "x-small": "g-body-xs",
-    intro: "intro"
+    "x-small": "g-body-xs"
   }
 };
 

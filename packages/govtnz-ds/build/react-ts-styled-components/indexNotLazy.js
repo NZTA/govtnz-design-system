@@ -7,6 +7,8 @@ var FlexContainer_1 = require("./FlexContainer");
 Object.defineProperty(exports, "flexContainer", { enumerable: true, get: function () { return FlexContainer_1.default; } });
 var FlexRow_1 = require("./FlexRow");
 Object.defineProperty(exports, "flexRow", { enumerable: true, get: function () { return FlexRow_1.default; } });
+var Accordion_1 = require("./Accordion");
+Object.defineProperty(exports, "accordion", { enumerable: true, get: function () { return Accordion_1.default; } });
 var Alert_1 = require("./Alert");
 Object.defineProperty(exports, "alert", { enumerable: true, get: function () { return Alert_1.default; } });
 var FooterStandard_1 = require("./FooterStandard");

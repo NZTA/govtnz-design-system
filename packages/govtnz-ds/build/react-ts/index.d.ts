@@ -1,6 +1,7 @@
 export declare const FlexColumn: () => Promise<typeof import("./FlexColumn")>;
 export declare const FlexContainer: () => Promise<typeof import("./FlexContainer")>;
 export declare const FlexRow: () => Promise<typeof import("./FlexRow")>;
+export declare const Accordion: () => Promise<typeof import("./Accordion")>;
 export declare const Alert: () => Promise<typeof import("./Alert")>;
 export declare const FooterStandard: () => Promise<typeof import("./FooterStandard")>;
 export declare const FooterWrapper: () => Promise<typeof import("./FooterWrapper")>;

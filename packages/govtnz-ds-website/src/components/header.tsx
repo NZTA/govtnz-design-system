@@ -50,18 +50,18 @@ const Header = ({ siteTitle }: Props) => (
         </div>
         
         <div class="header theme--dark">
-            <div class="[ section-m ] header__title">
+            <div class="[ section-s ] header__title">
                 <div class="wrapper">
                     <div class="layout ">
                         <div class="grid">
-                            <div class="[ col medium-8 ]">
+                            <div class="[ col medium-8 ] g-hint">
                                 <ol class="breadcrumb">
                                     <li>
                                         <a href="/">Home</a>
                                     </li>
                                 </ol>
 
-                                <h1>
+                                <h1 class="header__title">
                                     Pattern library
                                 </h1>
                             </div>
@@ -71,95 +71,86 @@ const Header = ({ siteTitle }: Props) => (
                 
                 <div class='wrapper'>
 
-    <div class='[ layout ]'>
-        
-        <div class='[ grid ]'>
+                <div class='[ layout ]'>
+                    
+                    <div class='[ grid ]'>
 
-            <ul class='list-inline [ col ] styleguide__navigation'>
-                
-                <li>
-                    <a href='/pattern-library/type/' class='{% if item.title == "type" %} navigation__active{% endif %}'>
-                        Type
-                        <i class='arrow arrow-bottom'></i>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href='/pattern-library/themes/' class='{% if item.title == "themes" %} navigation__active{% endif %}'>
-                        Themes
-                        <i class='arrow arrow-bottom'></i>
-                    </a>
-                </li>
-                
+                        <ul class='list-inline [ col ] styleguide__navigation'>
+                            
+                            <li>
+                                <a href='/pattern-library/type/' class='{% if item.title == "type" %} navigation__active{% endif %}'>
+                                    Type
+                                    <i class='arrow arrow-bottom'></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href='/pattern-library/themes/' class='{% if item.title == "themes" %} navigation__active{% endif %}'>
+                                    Themes
+                                    <i class='arrow arrow-bottom'></i>
+                                </a>
+                            </li>
+                            
 
-                <li>
-                    <a href='/pattern-library/ui-components/' class='{% if item.title == "components" %} navigation__active {% endif %}'>
-                        Components
-                        <i class='arrow arrow-bottom'></i>
-                    </a>
-                </li>
+                            <li>
+                                <a href='/pattern-library/ui-components/' class='{% if item.title == "components" %} navigation__active {% endif %}'>
+                                    Components
+                                    <i class='arrow arrow-bottom'></i>
+                                </a>
+                            </li>
 
-                <li>
-                    <a href="/pattern-library/grid/" class="{% if item.title == 'grid' %}navigation__active{% endif %}">
-                        Grid
-                        <i class="arrow arrow-bottom"></i>
-                    </a>
-                </li>
+                            <li>
+                                <a href="/pattern-library/grid/" class="{% if item.title == 'grid' %}navigation__active{% endif %}">
+                                    Grid
+                                    <i class="arrow arrow-bottom"></i>
+                                </a>
+                            </li>
 
-                <li>
-                    <a href='/pattern-library/patterns/' class='arrow--center{% if item.title == "patterns" %} navigation__active {% endif %}'>
-                        Patterns
-                        <i class='arrow arrow-bottom'></i>
-                    </a>
-                </li>
-               
-                <li>
-                    <a href="/pattern-library/forms/" class='{% if item.title == "forms" %} navigation__active{% endif %}'>
-                        Forms
-                        <i class="arrow arrow-bottom"></i>
-                    </a>
-                </li>
+                            <li>
+                                <a href='/pattern-library/patterns/' class='arrow--center{% if item.title == "patterns" %} navigation__active {% endif %}'>
+                                    Patterns
+                                    <i class='arrow arrow-bottom'></i>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/pattern-library/forms/" class='{% if item.title == "forms" %} navigation__active{% endif %}'>
+                                    Forms
+                                    <i class="arrow arrow-bottom"></i>
+                                </a>
+                            </li>
 
-                <li>
-                    <a href="/pattern-library/pages/" class='{% if item.title == "pages" %} navigation__active{% endif %}'>
-                        Pages
-                        <i class="arrow arrow-bottom"></i>
-                    </a>
-                </li>
+                            <li>
+                                <a href="/pattern-library/pages/" class='{% if item.title == "pages" %} navigation__active{% endif %}'>
+                                    Pages
+                                    <i class="arrow arrow-bottom"></i>
+                                </a>
+                            </li>
 
-                <li>
-                    <a href="/pattern-library/traffic-info/" class="{% if item.title == 'traffic_info' %}navigation__active{% endif %}">
-                        Traffic info
-                        <i class="arrow arrow-bottom"></i>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="/pattern-library/accessibility/" class="{% if item.title == 'accessibility' %} navigation__active{% endif %}">
-                        Accessibility
-                        <i class="arrow arrow-bottom"></i>
-                    </a>
-                </li>
+                            <li>
+                                <a href="/pattern-library/traffic-info/" class="{% if item.title == 'traffic_info' %}navigation__active{% endif %}">
+                                    Traffic info
+                                    <i class="arrow arrow-bottom"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pattern-library/accessibility/" class="{% if item.title == 'accessibility' %} navigation__active{% endif %}">
+                                    Accessibility
+                                    <i class="arrow arrow-bottom"></i>
+                                </a>
+                            </li>
 
-                <li>
-                    <a href="/pattern-library/content/" class="{% if item.title == 'content' %} navigation__active{% endif %}">
-                        Content style guide 
-                        <i class="arrow arrow-bottom"></i>
-                    </a>
-                </li>
-                
-            </ul>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-
-
+                            <li>
+                                <a href="/pattern-library/content/" class="{% if item.title == 'content' %} navigation__active{% endif %}">
+                                    Content style guide 
+                                    <i class="arrow arrow-bottom"></i>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+                </div>
 
             </div>
         </div>

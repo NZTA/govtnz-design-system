@@ -34,6 +34,9 @@ import '../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../commons/styles/ds/themed-Li.scss';
 
+import Accordion from '@govtnz/ds/build/react-ts/Accordion';
+import '../commons/styles/ds/govtnzds/Accordion.scss';
+
 import InsetText from '../components/InsetText';
 
 import '../commons/styles/components-banner.scss';
@@ -88,6 +91,8 @@ const IndexPage = props => {
           </Row>
         </Container>
       </div> */}
+ 
+      <Accordion />
 
       <Container width="fixed">
         <Row>
@@ -103,6 +108,7 @@ const IndexPage = props => {
                     </h2>
                   </div>
 
+               
                   <div class="[ col large-half ] font-size__left">
                     <h4>
                     a) Heading sizes

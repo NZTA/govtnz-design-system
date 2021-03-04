@@ -11,7 +11,7 @@ const constants = {
   }
 };
 
-const H1 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (  
+const H1 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
   <h1
     className={`g-heading${
       constants.styleSize[styleSize] !== undefined

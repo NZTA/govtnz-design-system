@@ -1,6 +1,7 @@
 export { default as flexColumn } from "./FlexColumn";
 export { default as flexContainer } from "./FlexContainer";
 export { default as flexRow } from "./FlexRow";
+export { default as accordion } from "./Accordion";
 export { default as alert } from "./Alert";
 export { default as footerStandard } from "./FooterStandard";
 export { default as footerWrapper } from "./FooterWrapper";

@@ -4,9 +4,8 @@
 
 // Regular
 @font-face {
-  // font-family: 'National2';
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  // src: url('../fonts/National2Web-Regular.eot');
+  font-family: "Source Sans Pro";
+  src: url('../fonts/SourceSansPro-Regular.ttf');
   // src: url('../fonts/National2Web-Regular.eot?#iefix')
   //     format('embedded-opentype'),
   //   url('../fonts/National2Web-Regular.woff2') format('woff2'),
@@ -17,12 +16,15 @@
 
 // Medium
 @font-face {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro";
+  src: url('../fonts/SourceSansPro-Bold.ttf');
+  // SourceSansPro-Bold.ttf
+
   // src: url('../fonts/National2Web-Medium.eot');
   // src: url('../fonts/National2Web-Medium.eot?#iefix')
   //     format('embedded-opentype'),
   //   url('../fonts/National2Web-Medium.woff2') format('woff2'),
   //   url('../fonts/National2Web-Medium.woff') format('woff');
-  font-style: normal;
+  font-style: bold;
   font-weight: 500;
 }

@@ -3,6 +3,7 @@
 export const FlexColumn = () => import("./FlexColumn");
 export const FlexContainer = () => import("./FlexContainer");
 export const FlexRow = () => import("./FlexRow");
+export const Accordion = () => import("./Accordion");
 export const Alert = () => import("./Alert");
 export const FooterStandard = () => import("./FooterStandard");
 export const FooterWrapper = () => import("./FooterWrapper");

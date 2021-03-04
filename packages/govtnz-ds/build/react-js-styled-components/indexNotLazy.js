@@ -23,6 +23,12 @@ Object.defineProperty(exports, "flexRow", {
     return _FlexRow["default"];
   }
 });
+Object.defineProperty(exports, "accordion", {
+  enumerable: true,
+  get: function get() {
+    return _Accordion["default"];
+  }
+});
 Object.defineProperty(exports, "alert", {
   enumerable: true,
   get: function get() {
@@ -299,6 +305,8 @@ var _FlexColumn = _interopRequireDefault(require("./FlexColumn"));
 var _FlexContainer = _interopRequireDefault(require("./FlexContainer"));
 
 var _FlexRow = _interopRequireDefault(require("./FlexRow"));
+
+var _Accordion = _interopRequireDefault(require("./Accordion"));
 
 var _Alert = _interopRequireDefault(require("./Alert"));
 

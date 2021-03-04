@@ -500,6 +500,173 @@
       }
     ]
   },
+  "Accordion": {
+    "id": "Accordion",
+    "html": "<div role=\"contentinfo\" class=\"g-accordion\">\n  <mt-variable key=\"children\"> Example Accordion content </mt-variable>\n</div>\n",
+    "css": ".g-accordion {\n  border: 1px solid red;\n}",
+    "cssVariables": [
+      {
+        "id": "g-theme-font-family",
+        "valueSubstringMatch": "Arial, sans-serif",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
+        "id": "g-theme-color-heading",
+        "valueSubstringMatch": "#ff0000",
+        "defaultValue": "#0b0c0c"
+      },
+      {
+        "id": "g-theme-color-link",
+        "valueSubstringMatch": "#ff0000",
+        "defaultValue": "#0000ff"
+      },
+      {
+        "id": "g-theme-color-black",
+        "valueSubstringMatch": "#000000",
+        "defaultValue": "#000000"
+      },
+      {
+        "id": "g-theme-color-grey",
+        "valueSubstringMatch": "#bfc1c3",
+        "defaultValue": "#bfc1c3"
+      },
+      {
+        "id": "g-theme-color-darkblue",
+        "valueSubstringMatch": "#005ea5",
+        "defaultValue": "#005ea5"
+      },
+      {
+        "id": "g-theme-color-brand-1",
+        "valueSubstringMatch": "#ffbf47",
+        "defaultValue": "#b53cde"
+      },
+      {
+        "id": "g-theme-color-light-grey",
+        "valueSubstringMatch": "#f8f8f8",
+        "defaultValue": "#f8f8f8"
+      },
+      {
+        "id": "g-theme-color-mid-grey",
+        "valueSubstringMatch": "#6f777b",
+        "defaultValue": "#6f777b"
+      },
+      {
+        "id": "g-theme-color-white",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-color-brand-2",
+        "valueSubstringMatch": "#00823b",
+        "defaultValue": "#00823b"
+      },
+      {
+        "id": "g-theme-color-brand-3",
+        "valueSubstringMatch": "#003618",
+        "defaultValue": "#003618"
+      },
+      {
+        "id": "g-theme-color-brand-4",
+        "valueSubstringMatch": "#00692f",
+        "defaultValue": "#00692f"
+      },
+      {
+        "id": "g-theme-color-dark2",
+        "valueSubstringMatch": "#b10e1e",
+        "defaultValue": "#b10e1e"
+      },
+      {
+        "id": "g-theme-color-dark3",
+        "valueSubstringMatch": "#2b8cc4",
+        "defaultValue": "#2b8cc4"
+      },
+      {
+        "id": "g-theme-color-dark4",
+        "valueSubstringMatch": "#a1acb2",
+        "defaultValue": "#a1acb2"
+      },
+      {
+        "id": "g-theme-color-dark5",
+        "valueSubstringMatch": "#454a4c",
+        "defaultValue": "#454a4c"
+      },
+      {
+        "id": "g-theme-color-dark6",
+        "valueSubstringMatch": "#dee0e2",
+        "defaultValue": "#dee0e2"
+      },
+      {
+        "id": "g-theme-color-dark7",
+        "valueSubstringMatch": "#171819",
+        "defaultValue": "#171819"
+      },
+      {
+        "id": "g-theme-color-dark8",
+        "valueSubstringMatch": "#2e3133",
+        "defaultValue": "#2e3133"
+      },
+      {
+        "id": "g-theme-color-dark9",
+        "valueSubstringMatch": "#1d8feb",
+        "defaultValue": "#1d8feb"
+      },
+      {
+        "id": "g-theme-color-dark10",
+        "valueSubstringMatch": "#4c2c92",
+        "defaultValue": "#4c2c92"
+      },
+      {
+        "id": "g-theme-color-dark11",
+        "valueSubstringMatch": "#28a197",
+        "defaultValue": "#28a197"
+      },
+      {
+        "id": "g-theme-button-color",
+        "valueSubstringMatch": "#00823b",
+        "defaultValue": "#078766"
+      },
+      {
+        "id": "g-theme-button-color-hover-focus",
+        "valueSubstringMatch": "#00682f",
+        "defaultValue": "#0c6c53"
+      },
+      {
+        "id": "g-theme-button-color-secondary",
+        "valueSubstringMatch": "#dee0e2",
+        "defaultValue": "#d3d3d3"
+      },
+      {
+        "id": "g-theme-button-color-secondary-hover-focus",
+        "valueSubstringMatch": "#c8cacb",
+        "defaultValue": "#b2b2b2"
+      },
+      {
+        "id": "g-theme-button-color-secondary-box-shadow",
+        "valueSubstringMatch": "#858688",
+        "defaultValue": "#2a2a2a"
+      },
+      {
+        "id": "g-theme-button-color-warning",
+        "valueSubstringMatch": "#b10e1e",
+        "defaultValue": "#b10e1e"
+      },
+      {
+        "id": "g-theme-button-color-warning-hover-focus",
+        "valueSubstringMatch": "#8e0b18",
+        "defaultValue": "#900815"
+      },
+      {
+        "id": "g-theme-button-color-warning-box-shadow",
+        "valueSubstringMatch": "#47060c",
+        "defaultValue": "#2a2a2a"
+      },
+      {
+        "id": "g-theme-heading-font-weight",
+        "valueSubstringMatch": "g-heading-font-weight",
+        "defaultValue": "bold"
+      }
+    ]
+  },
   "Alert": {
     "id": "Alert",
     "html": "<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=info\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zM16 14c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2s2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.003-8c-1.042.002-2 .727-1.997 2.015.002 1.265.962 1.987 2.003 1.985 1.042-.002 2-.727 1.997-1.992-.002-1.288-.962-2.01-2.003-2.008z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=warning\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"30\"\n            viewBox=\"0 0 32 30\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M16.035 0c.746 0 1.424.387 1.778.995l13.95 26.233c.333.58.314 1.289-.05 1.851-.364.57-1.013.921-1.72.921H2.016c-.707 0-1.366-.349-1.73-.92-.362-.563-.383-1.273-.048-1.852L14.267.995C14.611.387 15.287 0 16.035 0zm-.006 22.938c-1.02 0-1.848.8-1.816 1.752 0 .92.86 1.691 1.847 1.691 1.019 0 1.847-.772 1.847-1.721-.031-.95-.86-1.722-1.878-1.722zm.477-14.015c-.892-.208-1.783.207-2.165.98-.127.266-.16.563-.128.8.063.86.095 1.722.159 2.583.096 1.366.159 2.701.255 4.037.03.415.03.831.063 1.247.033.742.606 1.276 1.37 1.276.732 0 1.337-.534 1.37-1.217.095-2.048.223-4.126.35-6.204l.096-1.662c.063-.86-.51-1.633-1.37-1.84z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=success\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zm15.047 7.004c-.96.878-5.696 5.559-5.996 5.735-.78-.703-2.039-1.99-2.878-2.809-.84-.76-1.379-.117-2.398.936-1.14 1.112 0 1.697 1.619 3.277l2.938 2.867c1.08.936 1.979-.468 3.417-1.814l5.877-5.792c1.858-1.756 2.278-1.756.779-3.16-1.32-1.346-1.26-1.346-3.358.76z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=error\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M27.314 27.314c6.248-6.248 6.248-16.38 0-22.628-6.248-6.248-16.38-6.248-22.628 0-6.248 6.248-6.248 16.38 0 22.628 6.248 6.248 16.38 6.248 22.628 0zM14.21 7.175c.405-.878 1.35-1.35 2.297-1.114.911.236 1.52 1.114 1.452 2.093l-.102 1.892c-.134 2.364-.27 4.728-.372 7.058-.034.777-.675 1.385-1.452 1.385-.81 0-1.418-.608-1.453-1.452-.034-.473-.034-.946-.067-1.419-.101-1.52-.169-3.04-.27-4.593-.068-.98-.102-1.96-.17-2.938-.032-.27.002-.609.137-.912zM16 21.873c1.08 0 1.959.879 1.992 1.96 0 1.08-.879 1.959-1.96 1.959-1.047 0-1.958-.88-1.958-1.925-.033-1.082.845-1.994 1.926-1.994z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=info\">\n    <div role=\"note\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n        <svg\n          width=\"32\"\n          height=\"32\"\n          viewBox=\"0 0 32 32\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zM16 14c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2s2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.003-8c-1.042.002-2 .727-1.997 2.015.002 1.265.962 1.987 2.003 1.985 1.042-.002 2-.727 1.997-1.992-.002-1.288-.962-2.01-2.003-2.008z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=warning\">\n    <div role=\"note\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n        <svg\n          width=\"32\"\n          height=\"30\"\n          viewBox=\"0 0 32 30\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M16.035 0c.746 0 1.424.387 1.778.995l13.95 26.233c.333.58.314 1.289-.05 1.851-.364.57-1.013.921-1.72.921H2.016c-.707 0-1.366-.349-1.73-.92-.362-.563-.383-1.273-.048-1.852L14.267.995C14.611.387 15.287 0 16.035 0zm-.006 22.938c-1.02 0-1.848.8-1.816 1.752 0 .92.86 1.691 1.847 1.691 1.019 0 1.847-.772 1.847-1.721-.031-.95-.86-1.722-1.878-1.722zm.477-14.015c-.892-.208-1.783.207-2.165.98-.127.266-.16.563-.128.8.063.86.095 1.722.159 2.583.096 1.366.159 2.701.255 4.037.03.415.03.831.063 1.247.033.742.606 1.276 1.37 1.276.732 0 1.337-.534 1.37-1.217.095-2.048.223-4.126.35-6.204l.096-1.662c.063-.86-.51-1.633-1.37-1.84z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=success\">\n    <div role=\"note\" tabindex=\"-1\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n        <svg\n          width=\"32\"\n          height=\"32\"\n          viewBox=\"0 0 32 32\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zm15.047 7.004c-.96.878-5.696 5.559-5.996 5.735-.78-.703-2.039-1.99-2.878-2.809-.84-.76-1.379-.117-2.398.936-1.14 1.112 0 1.697 1.619 3.277l2.938 2.867c1.08.936 1.979-.468 3.417-1.814l5.877-5.792c1.858-1.756 2.278-1.756.779-3.16-1.32-1.346-1.26-1.346-3.358.76z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=error\">\n    <div role=\"note\" tabindex=\"-1\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n        <svg\n          width=\"32\"\n          height=\"32\"\n          viewBox=\"0 0 32 32\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M27.314 27.314c6.248-6.248 6.248-16.38 0-22.628-6.248-6.248-16.38-6.248-22.628 0-6.248 6.248-6.248 16.38 0 22.628 6.248 6.248 16.38 6.248 22.628 0zM14.21 7.175c.405-.878 1.35-1.35 2.297-1.114.911.236 1.52 1.114 1.452 2.093l-.102 1.892c-.134 2.364-.27 4.728-.372 7.058-.034.777-.675 1.385-1.452 1.385-.81 0-1.418-.608-1.453-1.452-.034-.473-.034-.946-.067-1.419-.101-1.52-.169-3.04-.27-4.593-.068-.98-.102-1.96-.17-2.938-.032-.27.002-.609.137-.912zM16 21.873c1.08 0 1.959.879 1.992 1.96 0 1.08-.879 1.959-1.96 1.959-1.047 0-1.958-.88-1.958-1.925-.033-1.082.845-1.994 1.926-1.994z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n",
